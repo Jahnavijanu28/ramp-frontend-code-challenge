@@ -1,9 +1,8 @@
 # ramp-frontend-code-challenge
-Created with CodeSandbox
 Ramp CTF Challenge Solution
 A React-based solution for the Ramp Frontend Developer Challenge featuring DOM parsing and typewriter animation effects.
 Live Demo
-You can access the live demo [here](https://wvfvk5.csb.app/).
+You can access the live demo here.
 Challenge Overview
 This project solves a Capture The Flag (CTF) challenge that involves:
 
