@@ -1,25 +1,31 @@
-# ramp-frontend-code-challenge
-Ramp CTF Challenge Solution
+# Ramp CTF Challenge Solution
+
 A React-based solution for the Ramp Frontend Developer Challenge featuring DOM parsing and typewriter animation effects.
-Live Demo
-You can access the live demo here.
-Challenge Overview
+
+## Live Demo
+
+You can access the live demo [here](https://wvfvk5.csb.app/).
+
+## Challenge Overview
+
 This project solves a Capture The Flag (CTF) challenge that involves:
+- Extracting a hidden URL from DOM elements using a specific pattern
+- Creating a React application with a typewriter effect
+- Fetching and displaying the flag character by character
 
-Extracting a hidden URL from DOM elements using a specific pattern
-Creating a React application with a typewriter effect
-Fetching and displaying the flag character by character
+## Solution Details
 
-Solution Details
-Step 1: URL Extraction
+### Step 1: URL Extraction
 Used JavaScript to parse the DOM and extract characters from elements matching this pattern:
-html<section data-id="92*">
+```html
+<section data-id="92*">
   <article data-class="*45">
     <div data-tag="*78*">
       <b class="ref" value="VALID_CHARACTER"></b>
     </div>
   </article>
 </section>
+
 Hidden URL Found: https://wgg522pwivhvi5gqsn675gth3q0otdja.lambda-url.us-east-1.on.aws/636865
 Flag: cheerly
 Step 2: React Application
@@ -33,6 +39,7 @@ Uses only React APIs (no external libraries)
 
 Technical Implementation
 URL Extraction Script
+
 javascriptfunction extractHiddenURL() {
   const sections = document.querySelectorAll('section[data-id^="92"]');
   const characters = [];
@@ -88,3 +95,15 @@ Requirements Met
 
 Final Submission
 cheerly - https://wvfvk5.csb.app/
+
+## How to Use This:
+
+1. **Select ALL the text above** (from `# Ramp CTF` to the final backtick)
+2. **Copy it** (Ctrl+C)
+3. **Go to your GitHub repository**
+4. **Create or edit README.md**
+5. **Delete everything** in the file
+6. **Paste this text** (Ctrl+V)
+7. **Save and commit**
+
+This will give you a properly formatted README with all the sections, code blocks, and links working correctly!
